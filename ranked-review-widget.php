@@ -4,7 +4,7 @@
   Plugin Name: Ranked Review Widget
   Plugin URI: http://amplifierinternational.com
   Description: RankedByReview Reviews widget
-  Version: 0.1
+  Version: 1.0.0
   Author: Craig G Smith
   Author Email: vxdhost@gmail.com
   License:
