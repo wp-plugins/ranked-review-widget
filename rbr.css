@@ -1,0 +1,331 @@
+.rbr_widget {
+    border: 1px solid #e5e5e5;
+    margin: 20px 0 0 0;
+    position: relative;
+
+    max-width: 625px;
+    margin: 0 auto;
+}
+
+.rbr_widget > h3{
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.rbr_widget .list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.rbr_widget .list-group-item {
+    position: relative;
+    display: block;
+    /* padding: 10px 15px; */
+    margin-bottom: 0px;
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    width:100%;
+    margin: 0;
+}
+
+
+
+.rbr_widget .media > .pull-left {
+    margin-right: 25px;
+}
+.rbr_widget .pull-left {
+    float: left !important;
+}
+
+
+.rbr_widget .media,
+.rbr_widget .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.rbr_widget .media-body{
+    margin-left: 100px;
+}
+
+.rbr_widget .media-heading {
+    margin: 0;
+}
+.rbr_widget .img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}
+
+.rbr_widget small {
+    font-style: italic;
+    color: #999;
+    font-size: 11px;
+    text-align: right;
+    display: block;
+}
+
+.rbr_widget p {
+    border-top: #ddd dashed 1px;
+    border-bottom: #ddd dashed 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.rbr_widget .ls-wrapper:after,
+.rbr_widget .ls-wrapper:before,
+.rbr_widget .clearfix:before,
+.rbr_widget .clearfix:after {
+  content: " ";
+  display: table;
+}
+.rbr_widget .clearfix:after,
+.rbr_widget .ls-wrapper:after{
+  clear: both;
+}
+.rbr_widget .inner { 
+
+}
+
+.rbr_widget .ls-wrapper {
+    margin: 0 auto;
+}
+.rbr_widget .buttons {
+    text-align:center;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+
+/*
+ *  Liquid Slider v2
+ *  Copyright 2012 Kevin Batdorf
+ *  http://liquidslider.com
+ *  MIT license
+ */
+
+.no-js .liquid-slider {
+  height:350px;
+  overflow:scroll;
+}
+.ls-preloader {  
+  background: url(images/loading.gif) #f2f2f2 no-repeat center 50%;
+  opacity:1;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:2;
+}
+
+/*** Containers ***/
+.ls-wrapper {
+  /* clear: both; */
+  /* overflow: auto; */
+  position: relative;
+}
+.liquid-slider {
+  background: #f2f2f2;
+  width: 600px;
+  margin: 0 auto;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.arrows .liquid-slider {
+  /* Margin between slider and arrows */
+  margin: 0 10px;
+}
+.ls-responsive .liquid-slider {
+  width: 100%;
+  margin: 0;
+}
+.panel-container {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  /* from http://davidwalsh.name/translate3d */
+}
+.liquid-slider .panel-container .fade {
+  width:100%;
+  opacity: 0;
+  position: absolute;
+  top: 0; 
+  left: 0;
+  display: block;
+}
+
+/*** Panels ***/
+.liquid-slider .ls-panel {  
+  width: 600px;
+  display: block;
+  float: left;
+}
+.panel-wrapper {  
+  padding: 15px 40px;
+  position:relative;
+}
+
+/*** Tabbed Navigation ***/
+.ls-nav {
+  overflow:hidden;
+  clear:both;
+}
+.ls-nav a {
+  background: #d8d8d8;
+  color: #333333;
+  margin-right: 1px;
+  padding: 10px 15px;  
+  outline:0;
+}
+.ls-nav a:hover {
+  background: #f2f2f2;
+  color: #333333;
+  text-shadow: none;
+}
+.ls-nav .current a {
+  background: #f2f2f2;
+}
+.currentCrossLink {
+  font-weight: bold;
+}
+.ls-nav ul {  
+  padding:0;
+  clear: both;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+.ls-nav ul li {
+  display: inline;
+}
+.ls-nav ul li a {
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
+/*** Mobile Navigation ***/
+.ls-select-box { 
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  background: url(images/menu.png) no-repeat right #ddd;
+}
+.ls-select-box select {  
+  width: 150%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance:none;
+  background: transparent;
+  padding: 5px;
+  font-size: 110%;
+  border: none;
+  height: 35px;
+  cursor:pointer;
+  outline: 0;
+}
+
+/*** Arrow Navigation (non-graphical) ***/
+.ls-nav-left, .ls-nav-right {
+  top:0;
+  float: left;
+  clear:both;
+}
+.ls-nav-left a, .ls-nav-right a {
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.ls-responsive .ls-nav-left {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.ls-responsive .ls-nav-left a {
+  background: #9A9A9A;
+  width: 80px;
+}
+.ls-responsive .ls-nav-left a:hover {
+  background: #747474;
+}
+.ls-responsive .ls-nav-right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.ls-responsive .ls-nav-right a {
+  background: #9A9A9A;
+  width: 80px;
+}
+.ls-responsive .ls-nav-right a:hover {
+  background: #747474;
+}
+
+/*** Arrow Navigation (graphical) ***/
+.ls-nav-left-arrow, .ls-nav-right-arrow {
+  cursor: pointer;
+  float: left;
+  clear: both;
+}
+.ls-nav-left-arrow a, .ls-nav-right-arrow a {
+  display: block;
+}
+[class$="-arrow"] {
+  width: 25px;
+  height: 25px;
+  background-image: url(images/arrow.png);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  position:relative;
+}
+.ls-nav-right-arrow {
+  background-position: top right;  
+  margin-right: 5px;
+}
+.ls-nav-left-arrow {
+  background-position: top left;  
+  margin-left: 5px;
+}
+.ls-nav-left-arrow:hover {
+  background-position: bottom left;
+}
+.ls-nav-right-arrow:hover {
+  background-position: bottom right;
+}
+.ls-responsive .ls-nav-left-arrow {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.ls-responsive .ls-nav-right-arrow {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.btn-right {
+    float: right;
+}
+
+.btn-left {
+    float:left;
+}
