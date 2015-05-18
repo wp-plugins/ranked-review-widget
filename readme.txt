@@ -1,7 +1,7 @@
-=== Ranked Review Widget ===
+﻿=== Ranked By Review Widget ===
 Tags: reviews
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Stable tag: trunk
@@ -25,11 +25,23 @@ For more information and see how your business can overcome the three most commo
 
 == Installation ==
 Upload and install plugin
-use the following shortcode:
-[ranked-review-widget heading=\"Latest Reviews\" businessId=\"110307\"]
-update the heading and businessId to your values.
+use the following shortcodes
 
-In order to get your business id - claim it on http://rankedbyreview.com
+1) Newsletter Widget: [rbr_newsletter businessid="129031" /]
+ -> options: 
+  --> nocss = 1 to disable the default css appended. (recommended on bootstrap 3 powered templates)
+
+2) Review Widget: [ranked-review-widget businessid="129031" /]
+ -> options:
+  --> legacy = 1 -> to enable the old legacy version from v1 (default 0)
+  --> scroll = 1 to enable the scroller (default 0)
+  --> heading = 'XXX' -> add heading above the reviews 
+  --> count = 5 -> how many reviews to grab (default 5)
+  --> minscore = 3 -> minimum score of the reviews to grab (default 3)
+
+
+
+In order to get your business id - claim it on http://smallbusinessamplifier.co.nz
 
 == Changelog ==
 V1.0.0 - Inital Release
